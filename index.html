@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>smart strategy planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="https://i.pinimg.com/736x/b2/d7/ff/b2d7ff826824674543015ba87410a893.jpg" alt="Logo">
+        PrepOne
+    </div>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <h1>Create your smart study strategy</h1>
+    <p>Answer a few quick questions and get your personalized study plan & tips.</p>
+
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Full name e.g. Parineeta" required>
+
+        <label>Learning goal</label>
+        <select id="goal">
+            <option>DSA</option>
+            <option>Python</option>
+            <option>Database</option>
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option >SQL</option>
+        </select>
+                <input type="text" id="otherGoal" placeholder="Describe your goal" style="display:none; margin-top:8px;">
+
+        <label>Preferred study style</label>
+        <select id="style">
+            <option>Video Learning</option>
+            <option>Notes Reading</option>
+            <option>Coding Practice</option>
+            <option>Mixed Style</option>
+        </select>
+
+        <label>Weekly availability (hours)</label>
+        <input type="number" id="hours" value="10">
+
+        <button onclick="saveUserInput(); return false;">See Strategy</button>
+        
+
+
+    </form>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

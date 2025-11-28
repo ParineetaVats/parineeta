@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Strategy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="https://i.pinimg.com/736x/b2/d7/ff/b2d7ff826824674543015ba87410a893.jpg" alt="Logo">
+        PrepOne
+    </div>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <h2>Your Smart Strategy</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Smart Study Tips</h3>
+            <p id="tipsBox"></p>
+        </div>
+
+        <div class="card">
+            <h3>Generate Plan</h3>
+            <label>Enter total days</label>
+            <input type="number" id="days" placeholder="30">
+            <button onclick="createPlan()">Create Plan</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

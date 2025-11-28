@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ============================
+           Dashboard-specific styles
+        ============================ */
+        .plan-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+        }
+        .open-area {
+            padding: 15px;
+            margin-top: 18px;
+            background: #e8f6ff;
+            border-left: 4px solid #0077cc;
+        }
+        .progress-box {
+            background: #dfffe2;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid #16a34a;
+        }
+
+        /* Logo image in navbar */
+        .logo img {
+            height: 42px;
+            width: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="https://i.pinimg.com/736x/b2/d7/ff/b2d7ff826824674543015ba87410a893.jpg" alt="PrepOne Logo">
+        PrepOne
+    </div>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>Saved Plans</h2>
+    <div id="savedPlans"></div>
+
+    <!-- Expanded Plan Area -->
+    <div id="expandedPlan"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
